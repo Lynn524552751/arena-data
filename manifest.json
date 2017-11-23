@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Arena Data",
+  "description": "hearthstone arena data by hsreplay",
+  "version": "0.1",
+  "browser_action": {
+	"default_icon": "img/favicon.ico",
+	"default_title": "Arena Data", 
+	"default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["js/jquery-2.2.1.min.js","js/background.js"]
+  },
+  "permissions":
+    [
+        "contextMenus",
+        "tabs",
+        "notifications",
+        "webRequest",
+        "webRequestBlocking",
+        "storage",
+        "http://*/*",
+        "https://*/*"
+    ],
+  "content_scripts":[{
+	"matches": ["https://hsreplay.net/cards/*"],
+	"js": ["js/jquery-2.2.1.min.js","content_script.js"],
+	"css": ["css/bootstrap.css"],
+	"run_at": "document_end"
+  }]
+
+}
