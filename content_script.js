@@ -5,11 +5,11 @@ chrome.runtime.sendMessage(
 	{greeting: 'get-cards'},  
 	function (response) {  
 		cards = response
-		$.each(cards, function(idx, obj) {
-				if(42790 == obj["dbfId"]){
-					console.log(obj);		
-				}
-			});
+	//	$.each(cards, function(idx, obj) {
+	//			if(42790 == obj["dbfId"]){
+	//				console.log(obj);		
+	//			}
+	//		});
 		
 	});	
 	
