@@ -18,7 +18,7 @@ var cards = {
 function getCardsByCN(){
 	var data 
 	$.ajax({
-		url:"https://api.hearthstonejson.com/v1/22115/zhCN/cards.collectible.json",
+		url:"https://api.hearthstonejson.com/v1/latest/zhCN/cards.collectible.json",
 		dataType: 'json',
 		async: false,
 		success:function(result){
@@ -30,7 +30,7 @@ function getCardsByCN(){
 function getCardsByUS(){
 	var data 
 	$.ajax({
-		url:"https://api.hearthstonejson.com/v1/22115/enUS/cards.collectible.json",
+		url:"https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json",
 		dataType: 'json',
 		async: false,
 		success:function(result){
