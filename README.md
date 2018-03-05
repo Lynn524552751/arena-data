@@ -1,6 +1,7 @@
 # arena-data
 Chrome扩展 - 炉石传说卡牌名字翻译
 
+在以下URL加载脚本：
 https://hsreplay.net/cards/
 
 效果图：
