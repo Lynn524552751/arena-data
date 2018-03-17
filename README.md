@@ -1,6 +1,6 @@
 # arena-data
 Chrome扩展 - 炉石传说卡牌名字翻译
-
+炉石传说数据
 hsreplay
 
 效果图：
